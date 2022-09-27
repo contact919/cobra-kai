@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "declarationDir": "dist/types",
+    "declaration": true,
+  },
+  "include": [
+    "src/*"
+  ]
+}

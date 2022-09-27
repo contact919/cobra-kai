@@ -1,0 +1,7 @@
+.idea
+.swc
+.pnpm-debug.log
+.pnpm-store
+dist
+node_modules
+pnpm-lock.json

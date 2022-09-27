@@ -1,0 +1,16 @@
+{
+  "name": "@cobra/core",
+  "version": "1.0.0",
+  "description": "core sdk",
+  "main": "dist/index.js",
+  "types": "dist/types",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "author": "pollan919@gmail.com",
+  "scripts": {
+  },
+  "keywords": [],
+  "license": "ISC"
+}
