@@ -19,22 +19,5 @@ module.exports = {
         args: 'none'
       }
     ],
-  },
-  overrides: [
-    {
-      files: ['**/*.ts?(x)'],
-      rules: {
-        // Place to specify ESLint rules.
-        '@typescript-eslint/no-explicit-any': 'off',
-        '@typescript-eslint/no-var-requires': 'off',
-        '@typescript-eslint/no-non-null-assertion': 'off',
-        '@typescript-eslint/no-this-alias': 'off',
-        '@typescript-eslint/ban-ts-comment': 'off',
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/triple-slash-reference': 0,
-        'no-use-before-define': 'off',
-        '@typescript-eslint/no-use-before-define': 'off'
-      }
-    }
-  ]
+  }
 }
