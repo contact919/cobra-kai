@@ -6,15 +6,15 @@ type LogOptions = {
   message?: string
 }
 
-export class LogManager{
+export class LogManager {
   private message
   private userId
 
   static USERS = [
-    { userId: 'l1', name: '🚗l1'},
-    { userId: 'l2', name: '🚗l2'},
-    { userId: 'l3', name: '🚗l3'},
-  ] 
+    { userId: 'l1', name: '🚗l1' },
+    { userId: 'l2', name: '🚗l2' },
+    { userId: 'l3', name: '🚗l3' }
+  ]
 
   constructor(options: LogOptions) {
     const { message, userId } = options
@@ -22,8 +22,8 @@ export class LogManager{
     this.userId = userId
   }
 
-   output (): string {
-    const item = findItem(LogManager.USERS, (c: { userId: string }) => c.userId === this.userId) ?? {} as any
+  output(): string {
+    const item = findItem(LogManager.USERS, (c: { userId: string }) => c.userId === this.userId) ?? ({} as any)
     return `${item.name}-${Date.now()}-${this.message}`
   }
 }

@@ -4,7 +4,7 @@
   "description": "monorepo package",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/src/**/*.ts **/test/**/*.ts",
+    "lint": "eslint **/src/**/*.ts",
     "prepare": "husky install"
   },
   "lint-staged": {

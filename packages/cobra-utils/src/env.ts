@@ -9,5 +9,3 @@ const {
 const [, matchEnv = 'test'] = (servicePathReg.exec(host) as ENV[]) || []
 
 export { matchEnv }
-
-

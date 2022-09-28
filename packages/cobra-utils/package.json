@@ -10,6 +10,7 @@
   ],
   "author": "lixiang10@lixiang.com",
   "scripts": {
+    "lint": "eslint **/src/**/*.ts",
     "ts-types": "tsc --emitDeclarationOnly --outDir dist/types",
     "build": "rimraf dist && swc ./src -d dist && npm run ts-types"
   },
