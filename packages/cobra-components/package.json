@@ -1,7 +1,7 @@
 {
-  "name": "@cobrakai/components",
-  "version": "0.0.0",
-  "description": "react ui compoents 💄",
+  "name": "cobralee-components",
+  "version": "0.1.0",
+  "description": "react ui components 💄",
   "main": "dist/index.js",
   "types": "dist/types",
   "type": "module",
@@ -9,8 +9,7 @@
     "dist"
   ],
   "author": "lixiang10@lixiang.com",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [],
   "license": "ISC"
 }

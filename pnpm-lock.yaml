@@ -33,9 +33,9 @@ importers:
 
   packages/cobra-core:
     specifiers:
-      '@cobrakai/utils': workspace:^0.0.0
+      cobralee-utils: workspace:^0.0.0
     dependencies:
-      '@cobrakai/utils': link:../cobra-utils
+      cobralee-utils: link:../cobra-utils
 
   packages/cobra-utils:
     specifiers:

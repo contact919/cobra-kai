@@ -1,6 +1,6 @@
 {
-  "name": "@cobrakai/utils",
-  "version": "0.0.0",
+  "name": "cobralee-utils",
+  "version": "0.1.0",
   "description": "cobra utils sdk",
   "main": "dist/index.js",
   "types": "dist/types",

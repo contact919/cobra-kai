@@ -1,4 +1,4 @@
-import { findItem } from '@cobrakai/utils'
+import { findItem } from 'cobralee-utils'
 
 type LogOptions = {
   /**用户id */

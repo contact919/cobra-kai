@@ -1,6 +1,6 @@
 {
-  "name": "@cobrakai/core",
-  "version": "0.0.0",
+  "name": "cobralee-core",
+  "version": "0.1.0",
   "description": "core sdk",
   "main": "dist/index.js",
   "types": "dist/types",
@@ -16,6 +16,6 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
-    "@cobrakai/utils": "workspace:^0.0.0"
+    "cobralee-utils": "workspace:^0.1.0"
   }
 }
