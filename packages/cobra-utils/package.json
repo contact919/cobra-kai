@@ -1,15 +1,18 @@
 {
-  "name": "@cobra/utils",
-  "version": "1.0.0",
-  "description": "utils sdk",
+  "name": "@cobrakai/utils",
+  "version": "0.0.0",
+  "description": "cobra utils sdk",
   "main": "dist/index.js",
   "types": "dist/types",
   "type": "module",
   "files": [
     "dist"
   ],
-  "author": "pollan919@gmail.com",
-  "scripts": {},
+  "author": "lixiang10@lixiang.com",
+  "scripts": {
+    "ts-types": "tsc --emitDeclarationOnly --outDir dist/types",
+    "build": "rimraf dist && swc ./src -d dist && npm run ts-types"
+  },
   "keywords": [],
   "license": "ISC",
   "dependencies": {

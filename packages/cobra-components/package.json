@@ -1,6 +1,6 @@
 {
-  "name": "@cobra/components",
-  "version": "1.0.0",
+  "name": "@cobrakai/components",
+  "version": "0.0.0",
   "description": "react ui compoents 💄",
   "main": "dist/index.js",
   "types": "dist/types",
@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "author": "pollan919@gmail.com",
+  "author": "lixiang10@lixiang.com",
   "scripts": {
   },
   "keywords": [],

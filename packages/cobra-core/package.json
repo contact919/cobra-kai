@@ -1,6 +1,6 @@
 {
-  "name": "@cobra/core",
-  "version": "1.0.0",
+  "name": "@cobrakai/core",
+  "version": "0.0.0",
   "description": "core sdk",
   "main": "dist/index.js",
   "types": "dist/types",
@@ -8,9 +8,14 @@
   "files": [
     "dist"
   ],
-  "author": "pollan919@gmail.com",
+  "author": "lixiang10@lixiang.com",
   "scripts": {
+    "ts-types": "tsc --emitDeclarationOnly --outDir dist/types",
+    "build": "rimraf dist && swc ./src -d dist && npm run ts-types"
   },
   "keywords": [],
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@cobrakai/utils": "workspace:^0.0.0"
+  }
 }
