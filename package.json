@@ -4,11 +4,11 @@
   "description": "monorepo package",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/src/**/*.ts",
+    "lint": "eslint **/src/**/*.{ts,tsx}",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/src/**/*.ts": [
+    "**/src/**/*.{ts,tsx}": [
       "prettier --write",
       "eslint --fix"
     ]
