@@ -1,0 +1,20 @@
+{
+  "name": "@chehejia/sec-hooks",
+  "version": "0.2.0",
+  "description": "sec hooks",
+  "main": "./dist/index.mjs",
+  "types": "./dist/types",
+  "author": "lixiang10@lixiang.com",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "types": "tsc --emitDeclarationOnly --outDir dist/types",
+    "build": "vite build && npm run types"
+  },
+  "dependencies": {
+    "@chehejia/sec-utils": "workspace:^0.3.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0"
+  }
+}

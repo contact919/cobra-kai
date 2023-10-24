@@ -1,7 +1,7 @@
 {
-  "name": "cobralee-utils",
+  "name": "sec-core",
   "version": "0.1.0",
-  "description": "cobra utils sdk",
+  "description": "sec core",
   "main": "dist/index.js",
   "types": "dist/types",
   "type": "module",
@@ -10,16 +10,9 @@
   ],
   "author": "lixiang10@lixiang.com",
   "scripts": {
-    "lint": "eslint **/src/**/*.ts",
     "ts-types": "tsc --emitDeclarationOnly --outDir dist/types",
     "build": "rimraf dist && swc ./src -d dist && npm run ts-types"
   },
   "keywords": [],
-  "license": "ISC",
-  "dependencies": {
-    "lodash-es": "^4.17.21"
-  },
-  "devDependencies": {
-    "@types/lodash-es": "^4.17.6"
-  }
+  "license": "ISC"
 }

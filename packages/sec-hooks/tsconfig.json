@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Bundler",
+    "sourceMap": true,
+    "outDir": "dist",
+    "declarationDir": "dist/types",
+    "declaration": true,
+    "emitDeclarationOnly": true
+  },
+  "include": ["src/**/*"]
+}

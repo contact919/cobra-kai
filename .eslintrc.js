@@ -18,6 +18,7 @@ module.exports = {
         vars: 'all',
         args: 'none'
       }
-    ]
+    ],
+    '@typescript-eslint/no-explicit-any': 1
   }
 }

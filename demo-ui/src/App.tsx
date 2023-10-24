@@ -1,22 +1,40 @@
 import './App.css'
-import { findItem, matchEnv } from 'cobralee-utils'
-import { LogManager } from 'cobralee-core'
+import { LogManager } from 'sec-core'
+import { useUser } from '@chehejia/sec-hooks'
+import AuthProvider from '@/components/AuthProvider'
+import auth, { getServiceId } from '@/utils/auth'
+import dayjs from 'dayjs'
 
 function App() {
-  const list = [
-    { name: 'l9', id: 1 },
-    { name: 'l8', id: 2 }
-  ]
+  const { userInfo, hasGranted } = useUser({ audience: getServiceId(), auth })
+  const scopeYes = hasGranted('post:vuln') ? '✅' : '❌'
+  const scopeNo = hasGranted('non-existent') ? '✅' : '❌'
 
-  const item = findItem(list, (c) => c.id === 1)
-
-  const instance = new LogManager({ userId: 'l1', message: 'xiang的自定义信息' })
+  const instance = new LogManager()
   return (
-    <div className='App'>
-      <div>旗舰：{item?.name}</div>
-      <div>当前环境：{matchEnv}</div>
-      <div>LogManager调用: {instance.output()}</div>
-    </div>
+    <AuthProvider>
+      <div className='App'>
+        <a target={'_blank'} href='https://www.npmjs.com/package/cobralee-utils'>
+          @chehejia/sec-hooks
+        </a>
+        <div style={{ display: 'flex', gap: 16 }}>
+          <div>nickname{userInfo?.nickname}</div>
+          <div>
+            post:vuln：{scopeYes} ｜ non-existent：{scopeNo}
+          </div>
+        </div>
+        <line />
+        <a target={'_blank'} href='https://www.npmjs.com/package/cobralee-core'>
+          sec-core
+        </a>
+        <div>LogManager output: {dayjs(Number(instance.output())).format('YYYY-MM-DD HH-mm-ss')}</div>
+        <line />
+        <a target={'_blank'} href='https://www.npmjs.com/package/cobralee-core'>
+          sec-components
+        </a>
+        <div>components</div>
+      </div>
+    </AuthProvider>
   )
 }
 
